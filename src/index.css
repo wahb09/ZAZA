@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-cinzel: "Cinzel", serif;
+
+  --color-void: #0E050A;
+  --color-cherry: #16090F;
+  --color-burgundy: #2A0A19;
+  --color-wine: #3B1024;
+  --color-crimson: #E83F67;
+  --color-gold: #D9B477;
+  --color-blush: #FFB5C8;
+  --color-ivory: #FFF3EA;
+  --color-ash: #B89F9E;
+  --color-mauve: #644E57;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: #0E050A;
+  color: #ECE0D8;
+}
+
+h1, h2, h3, .font-editorial {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Glassmorphism surfaces */
+.glass-surface {
+  background: rgba(22, 9, 15, 0.65);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 1px solid rgba(217, 180, 119, 0.14);
+}
+
+.glass-surface-elevated {
+  background: rgba(42, 10, 25, 0.72);
+  backdrop-filter: blur(36px);
+  -webkit-backdrop-filter: blur(36px);
+  border: 1px solid rgba(255, 181, 200, 0.22);
+  box-shadow: 0 20px 60px -10px rgba(232, 63, 103, 0.15);
+}
+
+.glass-hairline-card {
+  background: linear-gradient(180deg, rgba(32, 12, 22, 0.75) 0%, rgba(18, 7, 14, 0.85) 100%);
+  backdrop-filter: blur(28px);
+  border-top: 1px solid rgba(255, 181, 200, 0.32);
+  border-bottom: 1px solid rgba(217, 180, 119, 0.08);
+  border-left: 1px solid rgba(255, 181, 200, 0.12);
+  border-right: 1px solid rgba(217, 180, 119, 0.1);
+}
+
+.glow-crimson {
+  box-shadow: 0 0 35px -5px rgba(232, 63, 103, 0.35);
+}
+
+.glow-gold {
+  box-shadow: 0 0 30px -5px rgba(217, 180, 119, 0.3);
+}
+
+.glow-blush {
+  box-shadow: 0 0 25px -4px rgba(255, 181, 200, 0.3);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0E050A;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(217, 180, 119, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(232, 63, 103, 0.4);
+}
+
+/* Animations */
+@keyframes celestialFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes pulseSubtle {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.3); }
+}
+
+.animate-float {
+  animation: celestialFloat 6s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 4s ease-in-out infinite;
+}
