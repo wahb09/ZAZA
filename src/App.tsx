@@ -28,7 +28,7 @@ function ScrollToTop() {
 
 export default function App() {
   return (
-    <BrowserRouter basename="/ZAZA">
+    <BrowserRouter>
       <div className="relative min-h-screen bg-[#0E050A] text-[#ECE0D8] overflow-x-hidden flex flex-col justify-between selection:bg-[#E83F67]/30 selection:text-[#FFF3EA]">
         {/* Ambient Celestial Particle Canvas */}
         <StarfieldCanvas />
