@@ -1,20 +1,57 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
 
-# Run and deploy your AI Studio app
+# A Universe Made of Love — ZAZA ❤️
 
-This contains everything you need to run your app locally.
+A personal romantic website created by Wahb for ZAZA.
 
-View your app in AI Studio: https://ai.studio/apps/ef47b01d-8a4c-4d17-a63e-7c71e6adb210
+## About the Project
+
+This website is a small digital universe dedicated to expressing love, memories, feelings, and promises through an interactive experience.
+
+## Features
+
+- Romantic home page
+- Personal love letter
+- Our story
+- Poems
+- Interactive mini-games
+- Little things
+- Promises
+- Secret surprise
+
+## Technologies
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+1. Clone the repository:
 
+   ```bash
+   git clone https://github.com/wahb09/ZAZA.git
+   ```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Build the project:
+
+   ```bash
+   npm run build
+   ```
+
+## Author
+
+Created with love by **Wahb**.
