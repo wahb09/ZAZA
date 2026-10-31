@@ -1,0 +1,6 @@
+{
+  "name": "A Universe Made of Love — ZAZA",
+  "description": "An intimate luxury digital sanctuary and interactive romantic universe crafted by Wahb for ZAZA, featuring letters, poetry, our story, and heartfelt games.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
